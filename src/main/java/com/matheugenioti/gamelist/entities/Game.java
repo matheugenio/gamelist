@@ -19,10 +19,15 @@ public class Game {
 	@Column(name = "game_year")
 	private Integer year;
 	private String genre;
-	private String platform;
+	private String platforms;
+	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
-	private String longDescripttion;
+	
+	@Column(columnDefinition = "TEXT")
+	private String longDescription;
 	
 	public Game() {
 		
@@ -30,30 +35,23 @@ public class Game {
 
 	
 
-	public Game(Long id, String title, Integer year, String genre, String platform, String imgUrl,
-			String shortDescription, String longDescripttion) {
+	public Game(Long id, String title, Integer year, String genre, String platforms,Double score, String imgUrl,
+			String shortDescription, String longDescription) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.year = year;
 		this.genre = genre;
-		this.platform = platform;
+		this.platforms = platforms;
+		this.score = score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
-		this.longDescripttion = longDescripttion;
+		this.longDescription = longDescription;
 	}
 
 
 
-	public Integer getYear() {
-		return year;
-	}
 
-
-
-	public void setYear(Integer year) {
-		this.year = year;
-	}
 
 
 
@@ -72,6 +70,15 @@ public class Game {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	public Integer getYear() {
+		return year;
+	}
+
+
+
+	public void setYear(Integer year) {
+		this.year = year;
+	}
 
 	public String getGenre() {
 		return genre;
@@ -81,13 +88,26 @@ public class Game {
 		this.genre = genre;
 	}
 
-	public String getPlatform() {
-		return platform;
+	public String getPlatforms() {
+		return platforms;
 	}
 
-	public void setPlatform(String platform) {
-		this.platform = platform;
+	public void setPlatforms(String platforms) {
+		this.platforms = platforms;
 	}
+	
+
+	public Double getScore() {
+		return score;
+	}
+
+
+
+	public void setScore(Double score) {
+		this.score = score;
+	}
+
+
 
 	public String getImgUrl() {
 		return imgUrl;
@@ -105,12 +125,12 @@ public class Game {
 		this.shortDescription = shortDescription;
 	}
 
-	public String getLongDescripttion() {
-		return longDescripttion;
+	public String getlongDescription() {
+		return longDescription;
 	}
 
-	public void setLongDescripttion(String longDescripttion) {
-		this.longDescripttion = longDescripttion;
+	public void setLongDescripttion(String longDescription) {
+		this.longDescription = longDescription;
 	}
 
 	@Override
