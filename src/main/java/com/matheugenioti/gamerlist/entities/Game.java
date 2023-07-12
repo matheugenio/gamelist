@@ -1,4 +1,4 @@
-package com.matheugenioti.gamelist.entities;
+package com.matheugenioti.gamerlist.entities;
 
 import java.util.Objects;
 

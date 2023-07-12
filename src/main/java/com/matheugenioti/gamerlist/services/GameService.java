@@ -1,13 +1,13 @@
-package com.matheugenioti.gamelist.services;
+package com.matheugenioti.gamerlist.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.matheugenioti.gamelist.dto.GameMinDTO;
-import com.matheugenioti.gamelist.entities.Game;
-import com.matheugenioti.gamelist.repositories.GameRepository;
+import com.matheugenioti.gamerlist.dto.GameMinDTO;
+import com.matheugenioti.gamerlist.entities.Game;
+import com.matheugenioti.gamerlist.repositories.GameRepository;
 
 @Service
 public class GameService {

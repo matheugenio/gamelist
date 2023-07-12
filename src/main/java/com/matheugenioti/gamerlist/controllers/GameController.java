@@ -1,4 +1,4 @@
-package com.matheugenioti.gamelist.controllers;
+package com.matheugenioti.gamerlist.controllers;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.matheugenioti.gamelist.dto.GameMinDTO;
-import com.matheugenioti.gamelist.services.GameService;
+import com.matheugenioti.gamerlist.dto.GameMinDTO;
+import com.matheugenioti.gamerlist.services.GameService;
 
 @RestController
 @RequestMapping(value = "/games")

@@ -1,5 +1,5 @@
-package com.matheugenioti.gamelist.dto;
-import com.matheugenioti.gamelist.entities.Game;
+package com.matheugenioti.gamerlist.dto;
+import com.matheugenioti.gamerlist.entities.Game;
 
 public class GameMinDTO {
 	
