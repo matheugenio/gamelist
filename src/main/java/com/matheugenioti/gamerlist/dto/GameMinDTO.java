@@ -1,5 +1,6 @@
 package com.matheugenioti.gamerlist.dto;
 import com.matheugenioti.gamerlist.entities.Game;
+import com.matheugenioti.projections.GameMinProjection;
 
 public class GameMinDTO {
 	
@@ -13,9 +14,18 @@ public class GameMinDTO {
 	public GameMinDTO() {
 		
 	}
+	
+	public GameMinDTO(GameMinProjection projection) {
+		
+		id = projection.getId();
+		title = projection.getTitle();
+		year = projection.getYear();
+		imgUrl = projection.getImgUrl();
+		shortDescription = projection.getShortDescription();
+	}
 
 	public GameMinDTO(Game entity) {
-		super();
+		
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();
